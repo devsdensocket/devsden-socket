@@ -1,8 +1,9 @@
 require('dotenv').config();
+const PORT = process.env.PORT || 8900
 
-const io = require("socket.io")(process.env.PORT || 8900, {
+const io = require("socket.io")(PORT, {
        cors: {
-              origin: "https://devs-den.herokuapp.com" && console.log("PORT: "+process.env.PORT),
+              origin: "https://devs-den.herokuapp.com" && console.log("PORT: "+PORT),
        },
 });
 
