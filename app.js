@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 8900
 
 const io = require("socket.io")(PORT, {
        cors: {
-              origin: "https://devs-den.herokuapp.com" && console.log("PORT: "+PORT),
+              origin: "https://devsden.netlify.app" && console.log("PORT: "+PORT),
        },
 });
 
